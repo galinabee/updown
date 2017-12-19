@@ -12,7 +12,7 @@ test("tryingToPrint", (t) =>
 
   {
     const actual = parser.parse();
-    const expected = " [ [ 'C', 4 ], [ 'B', 4 ], [ 'G', 5 ] ]";
+    const expected = [ [ "C", 4, 0 ], [ "B", 4, -1 ], [ "G", 5, 0 ] ];
     t.deepEqual(actual, expected,
       "tryingToPrint");
   }
